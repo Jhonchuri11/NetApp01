@@ -10,7 +10,7 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            
+
             // Creando un objeto 
             Rectangulo rectangulo = new Rectangulo();
 
@@ -38,6 +38,21 @@ namespace ConsoleApp1
 
             person.AsignarNombresCompletos();
             Console.WriteLine(person.NombresCompletos);
+
+
+            Profesor profesor = new Profesor
+            {
+                Nombres = "PRO1",
+                Apellidos = "PRO2",
+                Sueldo = 2000
+            };
+
+            Estudiante estudiante = new Estudiante
+            {
+                Nombres = "E1",
+                Apellidos = "AP1",
+                Codigo = 1000
+            };
 
             Console.Read();
 
