@@ -16,6 +16,8 @@ namespace ConsoleApp1
 
 
             // Definiendo dos variables
+
+            /*
             int area = 0;
             int perimetro = 0;
 
@@ -54,9 +56,41 @@ namespace ConsoleApp1
                 Codigo = 1000
             };
 
+            */
+
+            Rectangular rectangular = new Rectangular
+            {
+                x1 = 1, y1 = 1,
+                x2 = 1, y2 = 4,
+                x3 = 5, y3 = 4,
+                x4 = 5, y4 = 1  
+            };
+            rectangular.CalcularBase();
+            rectangular.CalcularAltura();
+            rectangular.CalcularArea();
+            rectangular.CalcularPerimetro();
+
+            Console.WriteLine(rectangular.Base);
+            Console.WriteLine(rectangular.Altura);
+            Console.WriteLine(rectangular.Area);
+            Console.WriteLine(rectangular.Perimetro);
+
+
+
             Console.Read();
 
+            // Base 1 en horizontal
+            // (0,8) (4,8)
+           
+            // 8
+            // Base 2 en horizontal
 
+            // (0,0) (4,0)
+            // 4
+
+            // Base = 4
+            // Altura = 8
+            // Area = 32
         }
     }
 }
